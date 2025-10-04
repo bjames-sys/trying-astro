@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Card from '../components/Card';
+---
+
+<BaseLayout>
+	<h1> Shelter </h1>
+	<Card client:visible/>
+	</BaseLayout>
+<style>
+	h1{
+		background-color: blue;
+		min-height: 120vh;
+	}
+</style>
+<script>
+import { consoleME } from '../lib/utils.ts';
+consoleME();
+</script>

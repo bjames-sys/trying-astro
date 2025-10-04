@@ -1,0 +1,28 @@
+---
+import Link from "../components/Link.astro";
+import '../styles/global.css';
+const { title = "default" } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8" />	
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="generator" content={Astro.generator} />
+	<title>{title}</title>
+  </head>
+  <body>
+    <nav>
+        <Link href="/try">try</a> 
+        <Link href="/try1">try1</a>
+    </nav>
+    <main>
+        
+    </main>
+    <slot>
+
+    </slot>
+    
+  </body>
