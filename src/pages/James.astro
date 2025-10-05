@@ -1,0 +1,44 @@
+---
+import '../styles/ThreeImageContainers.css';
+import pianoPicture from '../assets/piano.jpg';
+import chickenPicture from '../assets/chicken.jpg';
+import bballPicture from '../assets/bball.jpg';
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome to James Page</title>
+  </head>
+
+  <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Three Containers</title>
+  </head>
+  <body>
+    <main class="page">
+      <section class="container">
+        <div class="box">
+          <img src={pianoPicture.src} alt="Photo 1" />
+          <a href="/piano" class="btn">Piano</a>
+
+        </div>
+
+        <div class="box">
+          <img src={chickenPicture.src} alt="Photo 2" />
+            <a href="/chicken" class="btn">Chicken</a>
+
+        </div>
+
+        <div class="box">
+          <img src={bballPicture.src} alt="Photo 3" />
+            <a href="/bsball" class="btn">Basketball</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

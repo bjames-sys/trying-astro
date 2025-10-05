@@ -1,7 +1,4 @@
 ---
-import Link from "../components/Link.astro";
-import '../styles/global.css';
-
 const { title = "default" } = Astro.props;
 ---
 
@@ -14,17 +11,7 @@ const { title = "default" } = Astro.props;
 	<meta name="generator" content={Astro.generator} />
 	<title>{title}</title>
   </head>
+
   <body>
     <nav>
-    <Link href="/try">Hello</a> 
-    <Link href="/try1">Click me</a>
-
     </nav>
-    <main>
-        
-    </main>
-    <slot>
-
-    </slot>
-    
-  </body>

@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+/* Full-page setup */
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+
+  /* 👇 Add your background image here */
+  background-image: url('../assets/cats.jpg');
+  background-size: cover;      /* make it fill the screen */
+  background-position: center; /* center the image */
+  background-repeat: no-repeat; /* prevent tiling */
+}
+
+/* Center container for cat and button */
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Optional: slightly transparent background box behind cat */
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* Cat image in the middle */
+.center-image {
+  width: 250px;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  margin-bottom: 50px;
+  display: block;
+}
+
+/* Button */
+.click-btn {
+  background-color: #ff6600;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.click-btn:hover {
+  background-color: #ff4500;
+}

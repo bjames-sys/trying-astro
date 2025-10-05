@@ -1,0 +1,26 @@
+---
+const { href = "#", label = "Click Me" } = Astro.props;
+---
+
+<a href={href} class="click-btn">{label}</a>
+<style>
+    .click-btn {
+        background-color: #6200ea;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 8px;
+        transition-duration: 0.4s;
+    }
+
+    .click-btn:hover {
+        background-color: white;
+        color: black;
+        border: 2px solid #6200ea;
+    }
