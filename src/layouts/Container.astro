@@ -1,0 +1,11 @@
+---
+import MainLayout from "./MainLayout.astro";
+
+const { title = "Default Page" } = Astro.props;
+---
+
+<MainLayout title={title}>
+  <div class="page-container">
+    <slot /> <!-- Content from the page will render here -->
+  </div>
+</MainLayout>

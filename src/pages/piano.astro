@@ -1,41 +1,34 @@
 ---
 import picture from '../assets/playingk.jpg';
-import '../styles/global.css';
+import MainLayout from '../layouts/MainLayout.astro';
 ---
 
+<MainLayout title="Piano">
+  <div class="flex items-center justify-center min-h-screen">
+    <div class="relative flex items-center justify-center gap-10 max-w-[900px] mx-auto bg-cyan-400 p-6 rounded-xl shadow-lg">
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Piano</title>
-</head>
-<body class="flex items-center justify-center min-h-screen bg-gray-100">
-  <div class="relative flex items-center justify-center gap-10 max-w-[900px] mx-auto bg-cyan-400 p-6 rounded-xl shadow-lg">
+      <div>
+        <img 
+          src={picture.src} 
+          alt="Photo 1" 
+          class="w-[500px] h-60 rounded-xl object-cover" 
+        />
+      </div>
 
-    <div>
-      <img 
-        src={picture.src} 
-        alt="Photo 1" 
-        class="w-[500px] h-60 rounded-xl object-cover" 
-      />
+      <div class="max-w-[600px]">
+        <h2 class="text-2xl font-bold text-gray-800 mb-2">Hello!</h2>
+        <p class="text-gray-700 leading-relaxed font-serif">
+          Playing piano is one of my favorite activities. I love the sound of the keys and the way my paws feel as they dance across them. It's a great way to express myself and have fun!
+        </p>
+      </div>
+
+      <a 
+        href="/jamess" 
+        class="absolute bottom-4 right-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
+      >
+        Back
+      </a>
+
     </div>
-
-    <div class="max-w-[600px]">
-      <h2 class="text-2xl font-bold text-gray-800 mb-2">Hello!</h2>
-      <p class="text-gray-700 leading-relaxed font-serif">
-        Playing piano is one of my favorite activities. I love the sound of the keys and the way my paws feel as they dance across them. It's a great way to express myself and have fun!
-      </p>
-    </div>
-
-    <a 
-      href="/jamess" 
-      class="absolute bottom-4 right-4 bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition"
-    >
-      Back
-    </a>
-
   </div>
-</body>
-</html>
+</MainLayout>

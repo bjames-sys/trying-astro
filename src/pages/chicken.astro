@@ -1,18 +1,9 @@
 ---
 import picture from '../assets/chicken.jpg';
-import '../styles/global.css';
+import MainLayout from '../layouts/MainLayout.astro';
 ---
-
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chicken</title>
-</head>
-
-<body class="flex items-center justify-center min-h-screen bg-gray-100">
+<MainLayout title="Fried Chicken">
+    <div class="flex items-center justify-center min-h-screen">
   <div class="relative flex items-center justify-center gap-10 max-w-[900px] mx-auto bg-cyan-400 p-6 rounded-xl shadow-lg">
 
     <div>
@@ -36,7 +27,6 @@ import '../styles/global.css';
     >
       Back
     </a>
-
+</div>
   </div>
-</body>
-  </html>
+</MainLayout>
