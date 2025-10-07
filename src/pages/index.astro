@@ -2,13 +2,12 @@
 import '../styles/about.css';
 import picture from '../assets/cat.jpg';
 import ClickButton from '../components/ClickButton.astro';
+import AboutLayout from '../layouts/About.astro';
 ---
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Cutie Cat</title>
-</head>
-<div class="container">
-  <img src={picture.src} alt="Centered Picture" class="center-image" />
-  <ClickButton href="/jamess" label="Click Me" />
-</div>
+<AboutLayout title="Cutie Cat">
+  <div class="container">
+    <img src={picture.src} alt="Centered Picture" class="center-image" />
+    <ClickButton href="/jamess" label="Click Me" />
+  </div>
+</AboutLayout>

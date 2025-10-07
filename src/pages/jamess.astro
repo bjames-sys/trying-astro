@@ -1,54 +1,55 @@
 ---
-import '../styles/global.css';
 import pianoPicture from '../assets/piano.jpg';
 import chickenPicture from '../assets/chicken.jpg';
 import bballPicture from '../assets/bball.jpg';
+import Container from '../layouts/Container.astro';
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Favs</title>
-  </head>
+<Container title="James Page">
+  <div class="flex flex-col items-center justify-center min-h-screen gap-8">
 
-  <body class="flex items-center justify-center min-h-screen bg-gray-100">
+    <!-- Three image containers -->
+    <div class="flex flex-wrap justify-center gap-8">
+      <!-- Container 1 -->
+      <div class="relative w-64 h-64 rounded-xl overflow-hidden shadow-lg">
+        <img src={pianoPicture.src} alt="Piano" class="w-full h-full object-cover" />
+        <div class="absolute bottom-4 left-1/2 -translate-x-1/2">
+          <a href="/piano" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
+            Piano
+          </a>
+        </div>
+      </div>
 
-  <div class="flex flex-wrap justify-center gap-8">
+      <!-- Container 2 -->
+      <div class="relative w-64 h-64 rounded-xl overflow-hidden shadow-lg">
+        <img src={chickenPicture.src} alt="Chicken" class="w-full h-full object-cover" />
+        <div class="absolute bottom-4 left-1/2 -translate-x-1/2">
+          <a href="/chicken" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition">
+            Chicken
+          </a>
+        </div>
+      </div>
+
+      <!-- Container 3 -->
+      <div class="relative w-64 h-64 rounded-xl overflow-hidden shadow-lg">
+        <img src={bballPicture.src} alt="Basketball" class="w-full h-full object-cover" />
+        <div class="absolute bottom-4 left-1/2 -translate-x-1/2">
+          <a href="/bsball" class="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition">
+            Basketball
+          </a>
+        </div>
+      </div>
+    </div>
+
     
-    <!-- Container 1 -->
-    <div class="relative w-65 h-65 rounded-xl overflow-hidden shadow-lg">
-      <img src={pianoPicture.src} alt="Piano" class="w-full h-full object-cover" />
-      <div class="absolute bottom-4 left-1/2 -translate-x-1/2">
-        <a href="/piano" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">
-          Piano
-        </a>
-      </div>
-    </div>
-
-    <!-- Container 2 -->
-    <div class="relative w-64 h-65 rounded-xl overflow-hidden shadow-lg">
-      <img src={chickenPicture.src} alt="Chicken" class="w-full h-full object-cover" />
-      <div class="absolute bottom-4 left-1/2 -translate-x-1/2">
-        <a href="/chicken" class="bg-green-500 text-white px-4 py-2 rounded-lg hover:bg-green-600 transition">
-          Chicken
-        </a>
-      </div>
-    </div>
-
-    <!-- Container 3 -->
-    <div class="relative w-64 h-65 rounded-xl overflow-hidden shadow-lg">
-      <img src={bballPicture.src} alt="Basketball" class="w-full h-full object-cover" />
-      <div class="absolute bottom-4 left-1/2 -translate-x-1/2">
-        <a href="/bsball" class="bg-orange-500 text-white px-4 py-2 rounded-lg hover:bg-orange-600 transition">
-          Basketball
-        </a>
-      </div>
+    <div>
+      <a 
+        href="/faq"
+        class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition"
+      >
+        FAQs
+      </a>
     </div>
 
   </div>
-
-</body>
-
-</html>
+</Container>
